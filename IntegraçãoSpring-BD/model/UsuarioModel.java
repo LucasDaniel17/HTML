@@ -15,48 +15,48 @@ import lombok.Data;
 public class UsuarioModel {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "idUsuario")
-	private long idUsuario;
+	@Column(name = "id_usuario")
+	private long id_usuario;
 	
-	@Column(name = "loginUsuario", nullable = false, unique = true)
-	private String loginUsuario;
+	@Column(name = "login", nullable = false, unique = true)
+	private String login;
 	
-	@Column(name = "senhaUsuario", nullable = false)
-	private String senhaUsuario;
+	@Column(name = "senha", nullable = false)
+	private String senha;
 
-	public long getIdUsuario() {
-		return idUsuario;
+	public long getId_usuario() {
+		return id_usuario;
 	}
 
-	public void setIdUsuario(long idUsuario) {
-		this.idUsuario = idUsuario;
+	public void setId_usuario(long id_usuario) {
+		this.id_usuario = id_usuario;
 	}
 
-	public String getLoginUsuario() {
-		return loginUsuario;
+	public String getLogin() {
+		return login;
 	}
 
-	public void setLoginUsuario(String loginUsuario) {
-		this.loginUsuario = loginUsuario;
+	public void setLogin(String login) {
+		this.login = login;
 	}
 
-	public String getSenhaUsuario() {
-		return senhaUsuario;
+	public String getSenha() {
+		return senha;
 	}
 
-	public void setSenhaUsuario(String senhaUsuario) {
-		this.senhaUsuario = senhaUsuario;
+	public void setSenha(String senha) {
+		this.senha = senha;
 	}
 
 	public UsuarioModel() {
 		super();
 	}
 
-	public UsuarioModel(long idUsuario, String loginUsuario, String senhaUsuario) {
+	public UsuarioModel(long id_usuario, String login, String senha) {
 		super();
-		this.idUsuario = idUsuario;
-		this.loginUsuario = loginUsuario;
-		this.senhaUsuario = senhaUsuario;
+		this.id_usuario = id_usuario;
+		this.login = login;
+		this.senha = senha;
 	}
 
 	
